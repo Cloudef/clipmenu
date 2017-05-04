@@ -72,7 +72,7 @@ while sleep "${CM_SLEEP:-0.5}"; do
         fi
     fi
 
-    for selection in clipboard primary; do
+    for selection in clipboard; do
         data=$(_xsel -o --"$selection"; printf x)
 
         debug "Data before stripping: $data"
