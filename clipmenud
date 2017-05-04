@@ -131,6 +131,7 @@ while sleep "${CM_SLEEP:-0.5}"; do
             # https://github.com/cdown/clipmenu/issues/34 requires knowing if
             # we would skip first.
             _xsel -o --"$selection" | _xsel -i --"$selection"
+            _xsel -o --"$selection" | _xsel -i -p
         fi
     done
 
